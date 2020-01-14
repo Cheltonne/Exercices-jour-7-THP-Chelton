@@ -1,12 +1,9 @@
-puts "Quel est ton age ?"
-print "> "
-nb = gets.to_i
-i = 0
-while (2020 - nb) <= 2020
-    if nb == i 
-        puts "Il y a #{nb} ans, tu avais la moitie de l'age que tu as aujourd'hui."
-    end
-    puts "Il y a #{2020 - nb} an(s), tu avais #{i} an(s)"
-    nb -= 1
-    i += 1
+fake_mails = []
+n=1
+i=0
+while i < 50
+        fake_mails << "jean.dupont.#{sprintf '%02d', n}@email.fr"
+    n+=1
+    i+=1
 end
+puts fake_mails

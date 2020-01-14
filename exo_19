@@ -1,0 +1,13 @@
+fake_mails = []
+n=1
+i=0
+
+while i < 50
+    fake_mails << "jean.dupont.#{sprintf '%02d', n}@email.fr"
+    n+=1
+    i+=1
+
+    if i % 2 != 1
+        puts fake_mails[i - 1]
+    end
+end

@@ -1,7 +1,8 @@
-puts "Choisis un nombre au hasard"
+puts "En quelle annee es-tu ne(e)?"
 print "> "
-nb = gets.to_i
-nb.times do
-    puts '#{nb}'
-    nb -= 1
+nb=gets.to_i
+i=0
+while nb+i <= 2020
+    puts nb+i
+    i+=1
 end
