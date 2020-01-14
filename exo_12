@@ -1,0 +1,5 @@
+puts "Choisis un nombre au hasard."
+nb = gets.to_i
+nb.times do |i|
+    puts i+1
+end

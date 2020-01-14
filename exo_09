@@ -1,0 +1,5 @@
+puts "Quel est ton prenom ?"
+username = gets.chomp
+puts "Et ton nom de famille ?"
+userlastname = gets.chomp
+puts "Bonjour, #{username} #{userlastname} !"

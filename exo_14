@@ -1,0 +1,7 @@
+puts "Quelle est ton annee de naissance ?"
+print "> "
+nb = gets.to_i
+while nb >= 2020
+    puts "#{nb}, #{2020 - nb} ans"
+    nb += 1
+end

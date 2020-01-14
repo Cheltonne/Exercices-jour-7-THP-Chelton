@@ -1,0 +1,3 @@
+puts "Quel age as-tu ?"
+userage = gets.to_i
+puts "En 2017, tu avais #{userage - 3} ans !"
