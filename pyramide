@@ -2,15 +2,19 @@ puts "Combien d'etages desires-tu avoir dans ta pyramide ?"
 print "> "
 floors = floors_abs = gets.to_i
 i = 1
-puts "Voici la pyramide :"
-while i <= floors_abs
-    (floors-1).times do
-        print " "
+if floors >=1 && floors <=25
+    puts "Voici la pyramide :"
+    while i <= floors_abs
+        (floors-1).times do
+            print " "
+        end
+        i.times do
+            print "#"
+        end
+        floors-=1
+        i+=1
+        puts ""
     end
-    i.times do
-        print "#"
-    end
-    floors-=1
-    i+=1
-    puts ""
+else
+    puts "FATAL ERROR"
 end
